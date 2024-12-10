@@ -1,2 +1,3 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+folder `bin` berfungsi sebagai kode yang dijalankan
+foler `lib` merupakan library yang nantinya akan dideklarasikan / diimport ke folder `bin`
+Program ini adalah Bubble Sort. Saya membuat program ini secara ascending dan descending

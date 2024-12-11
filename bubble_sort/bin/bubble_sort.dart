@@ -6,8 +6,12 @@ void main(List<String> args) {
   // List kosong karena isinya akan diisi dengan angka
   List<int> angka = [];
 
+  // Meminta berapa angka yang mau diurutkan
+  stdout.write("Masukkan jumlah angka: ");
+  int jumlah = int.parse(stdin.readLineSync()!);
+
   // Menginput angka untuk diurutkan
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < jumlah; i++) {
     stdout.write("Masukkan angka ke-${i + 1}: ");
     angka.add(int.parse(stdin.readLineSync()!));
   }

@@ -10,11 +10,19 @@ void main(List<String> args) {
     print("${angka[i]}");
   }
 
-  // Mengurutkan list
-  bubbleSort(angka);
+  // Mengurutkan list dari yang paling kecil
+  ascendingSort(angka);
 
-  print("\nSetelah diurutkan");
+  print("\nSetelah diurutkan dari yang paling kecil");
   for (var i = 0; i < angka.length; i++) {
     print("${angka[i]}");
+  }
+
+  // Mengurutkan list dari yang paling besar
+  descendingSort(angka);
+
+  print("\nSetelah diurutkan dari yang paling besar");
+  for (var j = 0; j < angka.length; j++) {
+    print("${angka[j]}");
   }
 }

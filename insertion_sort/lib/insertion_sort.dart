@@ -3,10 +3,25 @@ void ascendingSort(List<int> list) {
   int n = list.length;
   for (var i = 0; i < n; i++) {
     int key = list[i];
-    for (var j = i - 1; j < n - i - 1; j++) {
-      if (j >= 0 && j > key) {
-        list[j + 1] = list[j];
-      }
+    int j = i - 1;
+    while (j >= 0 && list[j] > key) {
+      list[j + 1] = list[j];
+      j--;
     }
+    list[j + 1] = key;
+  }
+}
+
+void descendingSort(List<int> list) {
+  // Atribut
+  int n = list.length;
+  for (var i = 0; i < n; i++) {
+    int key = list[i];
+    int j = i - 1;
+    while (j >= 0 && list[j] < key) {
+      list[j + 1] = list[j];
+      j--;
+    }
+    list[j + 1] = key;
   }
 }
